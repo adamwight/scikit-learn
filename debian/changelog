@@ -1,3 +1,17 @@
+scikit-learn (0.16.1-3) UNRELEASED; urgency=medium
+
+  [ Zack Weinberg ]
+  * Clarify that python-scikits-learn is a pure transition package,
+    and has not provided compatibility aliases in some time.  Upstream
+    changed the top-level package name from scikits.learn to sklearn in
+    version 0.9, and dropped the scikits.learn compatibility alias in
+    version 0.12.  Version 0.4 is still in oldstable (squeeze), so we
+    will drop the transition package after jessie.
+  * Build Python 3 packages (closes: #730532).  Because of the above,
+    there is no python3-scikits-learn.
+
+ -- Adam Wight <adamw@ludd.net>  Sat, 08 Aug 2015 02:00:48 -0700
+
 scikit-learn (0.16.1-2) unstable; urgency=medium
 
   * Upload to unstable (Closes: #792074)
